@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nazneen's Kitchen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shirnk-to-fit=no">
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                background-color: #F1F1F1;
+            }
+            .container{
+                width: 600px;
+            }
+            table{
+                border-collapse: collapse;
+                margin: 0px 30px;
+            }
+
+            /*--------------Header-----------------*/
+
+            header{
+                width: 100%;
+                float: left;
+                background-color: white;
+                padding: 30px 0px;
+                text-align: center;
+            }
+            header h1{
+                font-family: 'Playfair Display', serif;
+                font-size: 30px;
+            }
+
+            /*----------------Hero-----------------*/
+
+            .hero{
+                width: 100%;
+                float: left;
+                background: url(img/bg_1.jpg) no-repeat;
+                background-size: cover;
+                padding: 85px 0px;
+            }
+            .hero h1{
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                padding: 0px 45px 20px 45px;
+                font-family: 'Playfair Display', serif;
+            }
+            .hero p{
+                color: white;
+                text-align: center;
+                padding: 0px 45px 20px 45px;
+                line-height: 30px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .hero-btn{
+                display:block;
+                border: none;
+                border-radius: 50px;
+                background-color: orange;
+                padding: 10px 15px;
+                margin: 0 auto;
+            }
+            .hero-btn a{
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+            }
+
+        /*-------------------Welcome---------------*/
+        
+            .welcome{
+                width: 100%;
+                float: left;
+                background-color: rgb(59, 57, 57);
+                padding: 30px 0px;
+                text-align: center;
+            }
+            span{
+                display: inline-block;
+                border-bottom: 2px solid orange;
+                width: 82px;
+            }
+            .head{
+                color: grey;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .welcome-title{
+                color: white;
+                font-family: 'Playfair Display', serif;
+                font-size: 30px;
+                padding: 15px 0px 30px 0px;
+            }
+            .welcome-des{
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                line-height: 30px;
+            }
+        /*----------------Service-----------------*/
+
+            .service{
+                width: 100%;
+                float: left;
+                background-color: white;
+                padding: 30px 0px;
+                text-align: center;
+            }
+            .icon{
+                width: 55px;
+            }
+            .healthy-food{
+                width: 50%;
+            }
+            .service-title{
+                color: black;
+                font-family: 'Playfair Display', serif;
+                font-size: 30px;
+                padding: 15px 0px 30px 0px;
+            }
+            .service-des{
+                color: grey;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                line-height: 30px;
+                padding-bottom: 30px;
+            }
+            .healthy-title{
+                color: black;
+                font-family: 'Playfair Display', serif;
+                font-size: 20px;
+                padding: 10px 15px;
+            }
+            .healthy-des{
+                color: grey;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                line-height: 25px;
+                padding: 0px 5px;
+            }
+
+        /*----------------Video----------------*/
+
+            .video{
+                width: 100%;
+                float: left;
+                background-color: #FAFAFA;
+                padding: 30px 0px;
+                text-align: center;
+            }
+            .video-img{
+                width: 100%;
+                repeat: no-repeat;
+                background-size: cover;
+            }
+
+        /*----------------menu-----------------*/
+
+            .menu{
+                width: 100%;
+                float: left;
+                background-color: white;
+                padding: 30px 0px 0px 0px;
+                text-align: center;
+            }
+            .menu-btn{
+                display:block;
+                border: none;
+                border-radius: 50px;
+                background-color: orange;
+                padding: 10px 15px;
+                margin: 25px auto;
+            }
+            .menu-row-one{
+                width: 47.5%;
+            }
+            .menu-row-two{
+                width: 5%;
+            }
+
+        /*----------------breakfast--------------*/
+        
+        .breakfast{
+                width: 100%;
+                float: left;
+                background-color: white;
+                padding: 30px 0px;
+                text-align: center;
+            }
+
+        /*----------------counter----------------*/
+
+        .counter{
+                width: 100%;
+                float: left;
+                background: url(img/bg_1.jpg)no-repeat;
+                background-size: cover;
+                text-align: center;
+                padding: 30px 0px;
+            }
+        .counter-tbl th{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 44px;
+                color: white;
+                padding: 25px;
+            }
+        .counter-tbl td{
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 15px;
+                color: white;
+            }
+
+        /*-----------------Blog----------------*/
+
+        .blog{
+                width: 100%;
+                float: left;
+                background-color: white;
+                padding: 30px 0px 0px 0px;
+                text-align: center;
+            }
+
+        /*-----------------Say-----------------*/
+        
+        .say{
+                width: 100%;
+                float: left;
+                background-color: #FAFAFA;
+                padding: 30px 0px 0px 0px;
+                text-align: center;
+            }
+        .person{
+                width: 55%;
+                background-size: cover;
+                border-radius: 50%;
+            }
+
+        /*-----------------footer-------------*/
+
+        footer{
+                width: 100%;
+                float: left;
+                text-align: center;
+                background-color: black;
+                color: white;
+                padding: 30px 0px;
+            }
+            .foot{
+                width: 33.33%;
+            }
+            .foot1{
+                font-size: 20px;
+            }
+            .foot p{
+                padding: 20px 20px 0px 20px;
+                line-height: 30px;
+                color: grey;
+            }
+            .foot ul{
+                padding-top: 21px;
+            }
+            .foot li{
+                list-style: none;
+                padding: 6px 0px;
+            }
+            .foot a{
+                text-decoration: none;
+                color: white;
+            }
+            .foot-btn{
+                background-color: black!important;
+                color: grey;
+                font-weight: bold;
+                margin-left: 175px;
+                margin-bottom: 0px!important;
+                margin-top: 75px;
+                border: none;
+            }
+            .copyright{
+                padding-left: 20px;
+                margin-top: 78px;
+                color: grey;
+            }
+            .foot-btn a{
+                text-decoration: none;
+                color: grey;
+            }    
+        </style>
+    </head>
+
+
+
+    <body>
+        <section class="container">
+            <header>
+                <h1>Nazneen's Kitchen</h1>
+            </header>
+
+        <!-----------------------------Hero--------------------------------------->
+
+            <section class="hero">
+                <h1>We Serve Healthy & Delicious Foods</h1>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <button class="hero-btn"><a href="#">Get your order here</a></button>
+            </section>
+
+        <!-----------------------------Welcome-------------------------------------->
+        
+            <section class="welcome">
+                <table>
+                    <tr>
+                        <td>
+                            <h1 class="head">Welcome</h1>
+                            <span></span>
+                            <h1 class="welcome-title">Welcome To Kitchen</h1>
+                            <p class="welcome-des">A small river named Duden flows by their place and supplies 
+                            it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+        <!---------------------------------------Service-------------------------------->
+            
+            <section class="service">
+                <table>
+                    <tr class="service-head">
+                        <td colspan="2">
+                            <h1 class="head">Service</h1>
+                            <span></span>
+                            <h1 class="service-title">Our Service</h1>
+                            <p class="service-des">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="healthy-food">
+                            <img src="img/001-diet.png" class="img-fluid icon" alt="icon">
+                            <h2 class="healthy-title">Healthy Food</h2>
+                            <p class="healthy-des">Lorem Ipsum has been the industry's standard</p>
+                        </td>
+                        <td class="recipe-book">
+                            <img src="img/003-recipe-book.png" class="img-fluid icon" alt="icon">
+                            <h2 class="healthy-title">Original Recipes</h2>
+                            <p class="healthy-des">Lorem Ipsum has been the industry's standard</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!----------------------------------Video---------------------------------->
+
+            <section class="video">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/bg_2.jpg" class="img-fluid video-img" alt="image">
+                            <h1 class="healthy-title">Watch Our Video</h1>
+                            <p class="healthy-des">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!---------------------------------Menu----------------------------------->
+
+            <section class="menu">
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <h1 class="head">MENU</h1>
+                            <span></span>
+                            <h1 class="service-title">Our Delicious Food</h1>
+                            <p class="service-des">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-row-one">
+                            <img src="img/menu-1.jpg" class="img-fluid video-img" alt="pic">
+                            <h2 class="healthy-title">Pasta, Sauce Milk</h2>
+                            <p class="healthy-des">Far far away, behind the word mountains, far from the countries</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                        <td class="menu-row-two"></td>
+                        <td class="menu-row-one">
+                            <img src="img/menu-2.jpg" class="img-fluid video-img" alt="pic">
+                            <h2 class="healthy-title">Sweetened Fruits</h2>
+                            <p class="healthy-des">Far far away, behind the word mountains, far from the countries</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-------------------------------------Breakfast---------------------------------->
+
+            <section class="breakfast">
+                <table>
+                    <tr>
+                        <td class="healthy-food">
+                            <h1 class="head">BREAKFAST</h1>
+                            <span></span>
+                            <h1 class="healthy-title">Grilled Beef with potatoes</h1>
+                            <p class="healthy-des">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                        <td>
+                            <img src="img/bg_3.jpg" class="img-fluid video-img" alt="pic">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/bg_4.jpg" class="img-fluid video-img" alt="pic">
+                        </td>
+                        <td class="healthy-food">
+                            <h1 class="head">LAUNCH</h1>
+                            <span></span>
+                            <h1 class="healthy-title">Grilled Beef with potatoes</h1>
+                            <p class="healthy-des">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="healthy-food">
+                            <h1 class="head">DINNER</h1>
+                            <span></span>
+                            <h1 class="healthy-title">Grilled Beef with potatoes</h1>
+                            <p class="healthy-des">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                        <td>
+                            <img src="img/bg_6.jpg" class="img-fluid video-img" alt="pic">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="img/bg_5.jpg" class="img-fluid video-img" alt="pic">
+                        </td>
+                        <td class="healthy-food">
+                            <h1 class="head">DESSERT</h1>
+                            <span></span>
+                            <h1 class="healthy-title">Grilled Beef with potatoes</h1>
+                            <p class="healthy-des">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="counter">
+                <table class="counter-tbl">
+                    <tr>
+                        <th>9457</th>
+                        <th>20</th>
+                        <th>80</th>
+                        <th>980</th>
+                    </tr>
+                    <tr>
+                        <td>Happy Customer</td>
+                        <td>Year Of Experience</td>
+                        <td>Branches</td>
+                        <td>Staff</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-------------------------------------Blog--------------------------------------->
+
+            <section class="blog">
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <h1 class="head">Blog</h1>
+                            <span></span>
+                            <h1 class="service-title">Read Stories</h1>
+                            <p class="service-des">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-row-one">
+                            <img src="img/blog-1.jpg" class="img-fluid video-img" alt="pic">
+                            <h2 class="healthy-title">Pasta, Sauce Milk</h2>
+                            <p class="healthy-des">Far far away, behind the word mountains, far from the countries</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                        <td class="menu-row-two"></td>
+                        <td class="menu-row-one">
+                            <img src="img/blog-2.jpg" class="img-fluid video-img" alt="pic">
+                            <h2 class="healthy-title">Sweetened Fruits</h2>
+                            <p class="healthy-des">Far far away, behind the word mountains, far from the countries</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <!----------------------------------Say---------------------------------------->
+
+            <section class="say">
+                <table>
+                    <tr>
+                        <td colspan="3">
+                            <h1 class="head">Say</h1>
+                            <span></span>
+                            <h1 class="service-title">Testimonial</h1>
+                            <p class="service-des">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-row-one">
+                            <img src="img/person_1.jpg" class="img-fluid person" alt="pic">
+                            <h2 class="healthy-title">Ronald Tuff</h2>
+                            <p class="service-des">Businessman</p>
+                            <p class="healthy-des">Far far away, behind the word mountains, far from the countries</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                        <td class="menu-row-two"></td>
+                        <td class="menu-row-one">
+                            <img src="img/person_2.jpg" class="img-fluid person" alt="pic">
+                            <h2 class="healthy-title">Willam Clarson</h2>
+                            <p class="service-des">Businessman</p>
+                            <p class="healthy-des">Far far away, behind the word mountains, far from the countries</p>
+                            <button class="menu-btn">Read More</button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <!----------------------Footer---------------------->
+
+            <footer>
+                <table>
+                    <tr class="foot1">
+                        <td>About</td>
+                        <td>Contact Info</td>
+                        <td>Useful Link</td>
+                    </tr>
+                    <tr>
+                        <td class="foot">
+                            <p class="">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </td>
+                        <td class="foot">
+                            <p>203 Fake St. Mountain View, San Francisco, California, USA <br>
+                                +2 392 3929 210</p>
+                        </td>
+                        <td class="foot">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Work</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <table>    
+                    <tr>
+                        <td>
+                            <p class="copyright">© 2018 Stories. All Rights Reserved</p>
+                        </td>
+                        <td>
+                            <button class="foot-btn"><a href="#">Unsubscribe</a></button>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </section>
+    </body> 
+</html>
